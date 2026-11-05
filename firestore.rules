@@ -1,0 +1,33 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128;
+    }
+
+    // Platforms collection: All users can read and write platforms in real-time
+    match /platforms/{platformId} {
+      allow read: if true;
+      allow write: if isValidId(platformId);
+    }
+
+    // Carousel collection: All users can view hero slides in real-time
+    match /carousel/{slideId} {
+      allow read: if true;
+      allow write: if isValidId(slideId);
+    }
+
+    // Messages collection: Telegram discussion group community chat
+    match /messages/{messageId} {
+      allow read: if true;
+      allow write: if isValidId(messageId);
+    }
+
+    // Default deny all other paths
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
