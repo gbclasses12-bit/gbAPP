@@ -1,0 +1,163 @@
+{
+  "entities": {
+    "Platform": {
+      "title": "Platform",
+      "description": "Educational platforms and hubs listed in the app",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the platform",
+          "maxLength": 100
+        },
+        "subtitle": {
+          "type": "string",
+          "description": "Short description or server count",
+          "maxLength": 200
+        },
+        "icon": {
+          "type": "string",
+          "description": "Icon image URL or data URI",
+          "maxLength": 2000000
+        },
+        "targetUrl": {
+          "type": "string",
+          "description": "URL to navigate to when clicked",
+          "maxLength": 1000
+        },
+        "openMode": {
+          "type": "string",
+          "enum": ["internal", "external", "new_tab", "same_tab"],
+          "description": "How the platform should open: internal webview, external browser, new tab, or same tab"
+        },
+        "badge": {
+          "type": "string",
+          "description": "Badge label such as Official, New, Popular",
+          "maxLength": 50
+        },
+        "order": {
+          "type": "number",
+          "description": "Display order rank"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Creation timestamp ISO string"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Last update timestamp ISO string"
+        }
+      },
+      "required": ["name", "subtitle", "icon", "openMode"]
+    },
+    "CarouselSlide": {
+      "title": "CarouselSlide",
+      "description": "Hero carousel slides featured on the home screen",
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Title of the slide",
+          "maxLength": 120
+        },
+        "subtitle": {
+          "type": "string",
+          "description": "Subtitle text for the banner",
+          "maxLength": 250
+        },
+        "image": {
+          "type": "string",
+          "description": "Banner image URL or data URI",
+          "maxLength": 2000000
+        },
+        "targetUrl": {
+          "type": "string",
+          "description": "URL opened on slide click",
+          "maxLength": 1000
+        },
+        "openMode": {
+          "type": "string",
+          "enum": ["internal", "external", "new_tab", "same_tab"],
+          "description": "How the slide should open"
+        },
+        "order": {
+          "type": "number",
+          "description": "Display sequence order"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Creation timestamp ISO string"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Last update timestamp ISO string"
+        }
+      },
+      "required": ["title", "image"]
+    }
+    "ChatMessage": {
+      "title": "ChatMessage",
+      "description": "Student and admin discussion group messages in GB Chat",
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "Message content",
+          "maxLength": 3000
+        },
+        "senderName": {
+          "type": "string",
+          "description": "Display name of student or admin",
+          "maxLength": 100
+        },
+        "senderId": {
+          "type": "string",
+          "description": "Unique user or session id",
+          "maxLength": 128
+        },
+        "senderEmail": {
+          "type": "string",
+          "description": "Sender email address if admin",
+          "maxLength": 150
+        },
+        "isOwner": {
+          "type": "boolean",
+          "description": "Whether message was sent by Sarvottam Yadav (Owner)"
+        },
+        "isAdmin": {
+          "type": "boolean",
+          "description": "Whether message was sent by verified admin"
+        },
+        "avatar": {
+          "type": "string",
+          "description": "Avatar image URL or letter icon",
+          "maxLength": 2000000
+        },
+        "imageUrl": {
+          "type": "string",
+          "description": "Optional attached photo image URL or base64 data",
+          "maxLength": 2000000
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Message creation timestamp ISO string"
+        }
+      },
+      "required": ["senderName", "senderId"]
+    }
+  },
+  "firestore": {
+    "/platforms/{platformId}": {
+      "schema": "Platform",
+      "description": "Live educational platform hubs managed by admin and displayed to all students"
+    },
+    "/carousel/{slideId}": {
+      "schema": "CarouselSlide",
+      "description": "Hero carousel slides displayed at the top of the hub"
+    },
+    "/messages/{messageId}": {
+      "schema": "ChatMessage",
+      "description": "Real-time Telegram-style student community messages"
+    }
+  }
+}
