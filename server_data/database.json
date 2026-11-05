@@ -1,0 +1,146 @@
+{
+  "platforms": [
+    {
+      "id": "gb-study",
+      "name": "GB Study",
+      "subtitle": "200+ app& server",
+      "icon": "/assets/gb_study_icon.png",
+      "badge": "Official",
+      "color": "#f59e0b",
+      "featured": true,
+      "targetUrl": "",
+      "openMode": "internal",
+      "order": 1
+    },
+    {
+      "id": "pw",
+      "name": "PW",
+      "subtitle": "Open platform to explore content.",
+      "icon": "/assets/icon_pw.png",
+      "featured": true,
+      "targetUrl": "",
+      "openMode": "internal",
+      "order": 2
+    },
+    {
+      "id": "mission-jeet",
+      "name": "MISSION JEET",
+      "subtitle": "Open platform to explore content.",
+      "icon": "/assets/icon_jeet.png",
+      "targetUrl": "",
+      "openMode": "internal",
+      "order": 3
+    },
+    {
+      "id": "pw-pi",
+      "name": "PW PI",
+      "subtitle": "Open platform to explore content.",
+      "icon": "/assets/icon_pi.png",
+      "targetUrl": "",
+      "openMode": "internal",
+      "order": 4
+    },
+    {
+      "id": "pw-book",
+      "name": "PW BOOK",
+      "subtitle": "Open platform to explore content.",
+      "icon": "/assets/icon_book.png",
+      "targetUrl": "",
+      "openMode": "internal",
+      "order": 5
+    },
+    {
+      "id": "pw-infinity",
+      "name": "PW INFINITY PASS",
+      "subtitle": "Open platform to explore content.",
+      "icon": "/assets/icon_infinity.png",
+      "targetUrl": "",
+      "openMode": "internal",
+      "order": 6
+    },
+    {
+      "id": "rwa",
+      "name": "RWA",
+      "subtitle": "Open platform to explore content.",
+      "icon": "/assets/icon_rwa.png",
+      "targetUrl": "",
+      "openMode": "internal",
+      "order": 7
+    },
+    {
+      "id": "gs-vision",
+      "name": "GS VISION",
+      "subtitle": "Open platform to explore content.",
+      "icon": "/assets/icon_gsvision.png",
+      "targetUrl": "",
+      "openMode": "internal",
+      "order": 8
+    },
+    {
+      "id": "future-kul",
+      "name": "FUTURE KUL",
+      "subtitle": "Open platform to explore content.",
+      "icon": "/assets/icon_futurekul.png",
+      "targetUrl": "",
+      "openMode": "internal",
+      "order": 9
+    },
+    {
+      "id": "apna-college",
+      "name": "APNA COLLEGE",
+      "subtitle": "Open platform to explore content.",
+      "icon": "/assets/icon_apnacollege.png",
+      "targetUrl": "",
+      "openMode": "internal",
+      "order": 10
+    },
+    {
+      "id": "sachin-academy",
+      "name": "SACHIN ACADEMY",
+      "subtitle": "Open platform to explore content.",
+      "icon": "/assets/icon_sachin.png",
+      "targetUrl": "",
+      "openMode": "internal",
+      "order": 11
+    },
+    {
+      "id": "master-sahab",
+      "name": "MASTER SAHAB",
+      "subtitle": "Open platform to explore content.",
+      "icon": "/assets/icon_mastersahab.png",
+      "targetUrl": "",
+      "openMode": "internal",
+      "order": 12
+    },
+    {
+      "id": "unacademy",
+      "name": "UNACADEMY",
+      "subtitle": "Open platform to explore content.",
+      "icon": "/assets/icon_unacademy.png",
+      "targetUrl": "",
+      "openMode": "internal",
+      "order": 13
+    }
+  ],
+  "carousel": [],
+  "messages": [
+    {
+      "id": "msg-welcome-1",
+      "text": "Namaste sabhi students! Swagat hai GB Study Official Discussion Group me 🚀 Yahan aap apne doubts, study notes, updates aur discussion share kar sakte hain. - Sarvottam Yadav",
+      "senderName": "Sarvottam Yadav",
+      "senderId": "owner-sarvottam",
+      "senderEmail": "sarvottamyadav789@gmail.com",
+      "isOwner": true,
+      "isAdmin": true,
+      "avatar": "/assets/gb_study_icon.png",
+      "createdAt": "2026-11-05T14:36:38.797Z"
+    }
+  ],
+  "deletedPlatformIds": [
+    "test-plat-1"
+  ],
+  "deletedCarouselIds": [
+    "test-slide-1"
+  ],
+  "updatedAt": "2026-11-05T14:37:22.101Z"
+}
