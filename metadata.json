@@ -1,0 +1,6 @@
+{
+  "name": "GB Study - Ultra Platform Hub",
+  "description": "GB Study educational platform hub by Sarvottam Yadav with multi-platform access, batches, test series, and interactive study resources.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
